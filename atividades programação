@@ -1,0 +1,19 @@
+git clone https://github.com/M1-atividades-programacao.git
+cd M1-atividades-programacao 
+
+git remote add atividade_alien https://github.com/Tobias-Viana/atividade_alien.git
+git remote add atividade_peixe https://github.com/Tobias-Viana/atividade_peixe.git
+git remote add atividade_media https://github.com/Tobias-Viana/atividade_media.git
+git remote add atividade_passaro https://github.com/Tobias-Viana/atividade_passaro.git
+
+git fetch atividade_alien
+git fetch atividade_peixe
+git fetch atividade_media
+git fetch atividade_passaro
+
+git subtree add --prefix=atividade_alien atividade_alien main
+git subtree add --prefix=atividade_peixe atividade_peixe main
+git subtree add --prefix=atividade_media atividade_media main
+git subtree add --prefix=atividade_passaro atividade_passaro main
+
+git push origin main
